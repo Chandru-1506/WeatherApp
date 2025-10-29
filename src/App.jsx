@@ -57,7 +57,8 @@ const WeatherDetails = ({
 };
 
 function App() {
-  let apiKey = "a9819c080a4756031f02742a0d101e3d";
+  let apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+  console.log(apiKey);
 
   const [text, setText] = useState("Erode");
 
