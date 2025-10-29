@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: Poppins;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #888;
+  color: yellow;
+}
+
+.searchImg {
+  width: 20px;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.city-input {
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: black;
+  padding: 10px;
+  color: yellow;
+}
+
+.city-input::placeholder {
+  color: bisque;
+}
+
+.Search-icon {
+  padding: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.Search-icon img {
+  margin-top: 5px;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.image {
+  text-align: center;
+}
+
+.temp,
+.city,
+.country {
+  font-size: 35px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.temp {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.city {
+  color: yellow;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.country {
+  font-size: 18px;
+  font-weight: 500;
+  color: yellow;
+}
+
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cord div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.cord div span:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: white;
+  font-style: italic;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wind-speed,
+.humidity-percentage {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  font-style: italic;
+}
+
+.element {
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.loading-message,
+.error-message,
+.city-not-found {
+  margin-top: 10px;
+  color: red;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.errorIcon {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.errorIcon img {
+  width: 300px;
+}
+
+.city-not-found {
+  font-size: 20px;
+  margin-bottom: 50px;
+  padding: 0;
+}
